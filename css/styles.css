@@ -1,3 +1,4 @@
+
 body{margin-top:20px;}
 .home-blog {
     padding-top: 80px;
@@ -273,11 +274,6 @@ body{margin-top:20px;}
     margin-left: 4px;
   }
 
-  
-
-  HTML
-  CSS
-
 .gradient-custom-3 {
 /* fallback for old browsers */
 background: #84fab0;
@@ -289,13 +285,10 @@ background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143
 background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
 }
 .gradient-custom-4 {
-/* fallback for old browsers */
-background: #84fab0;
+ background: #84fab0;
 
-/* Chrome 10-25, Safari 5.1-6 */
 background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
 
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
 }
 
@@ -308,31 +301,28 @@ label small {
 }
 
 
-/* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
   color: #262626;
 }
 
-/* Color of the navbar BEFORE scroll */
 .navbar-scroll {
   background-color: #FFC017;
 }
 
-/* Color of the links AFTER scroll */
+
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
   color: #262626;
 }
 
-/* Color of the navbar AFTER scroll */
+
 .navbar-scrolled {
   background-color: #fff;
 }
 
-/* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
   padding-top: auto;
   padding-bottom: auto;
@@ -345,7 +335,6 @@ label small {
 body{padding-top:20px;
 background-color:#f1f5f9;
 }
-
 
 body{
     background: #edf1f5;
