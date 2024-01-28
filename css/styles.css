@@ -1,4 +1,12 @@
 
+form {
+    width: 23rem;
+} 
+
+#passwordHelpBlock {
+    display: none;
+}
+
 body{margin-top:20px;}
 .home-blog {
     padding-top: 80px;

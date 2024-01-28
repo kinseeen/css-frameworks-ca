@@ -8,8 +8,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+
+    </script>
+ 
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
@@ -77,18 +80,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 text-black">
-
         <div class="px-5 ms-xl-4">
           <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
           <span class="h1 fw-bold mb-0">Logo</span>
         </div>
 
         <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-
-          <form style="width: 23rem;">
-
+          <form class="needs-validation" novalidate>
             <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
-
+            <!-- <form action="/html/index.html"> -->
             <div class="mb-3">
               <label for="emailInput" class="form-label">Email address</label>
               <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
@@ -98,16 +98,22 @@
             </div>
 
             <div class="form-outline mb-4">
-              <input type="password" id="form2Example28" class="form-control form-control-lg" />
-              <label class="form-label" for="form2Example28">Password</label>
+              <label class="form-label" for="passwordInput">Password</label>
+              <input type="password" id="passwordInput" pattern=".{8,}" required
+                title="Password must be atleast 8 characters" class="form-control form-control-lg" />
+              <small id="passwordHelpBlock" class="form-text text-muted">
+                Your password must be at least 8 characters.
+              </small>
             </div>
 
             <div class="pt-1 mb-4">
-              <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
-            </div>
 
-            <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-            <p>Don't have an account? <a href="/html/register.html" class="link-info">Register here</a></p>
+              <button class="btn btn-info btn-lg btn-block" type="button" onclick="validatePassword()">Login </button>
+              
+            </div>
+          
+          <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
+          <p>Don't have an account? <a href="/html/register.html" class="link-info">Register here</a></p>
 
           </form>
 
@@ -176,6 +182,7 @@
 
 </div>
 
+<script src="../javascript/validation.js"></script>
 
 </body>
 
